@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+    background: #EAEBEF;
+    font-family: 'Poppins', sans-serif;
+    min-width: 280px;
+}
+/* BARRA NAVEGACION */
+.nav{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 1s ease-in-out; 
+    transform: translateX(-1000px);
+    z-index: 200;
+}
+
+.nav--translate{
+    transform: translateX(0);
+}
+
+.nav__button-menu{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.list{
+    width: 100%;
+    min-width: 170px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #F6F8FA;
+}
+
+.list--steps{
+    background-color: #EAEBEF;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.list__item{
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.list__item--steps{
+    width: 100%;
+    display: flex;
+}
+
+.list__button{
+    margin-left: 20px;
+    position: relative;
+}
+
+.list__button--step{
+    display: flex;
+    line-height: 40px;
+    justify-content: space-between;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__link--article{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.list__inside{
+    text-align: start;
+    padding-left: 10px;
+}
+
+.list__show{
+    width: 100%;
+    margin-left: 0;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    transition: transform .3s;
+}
+
+.list__arrow--articles{
+    top: 0;
+}
+
+/* FINAL BARRA DE MENU */
+
+/* Lista de pasos */
+.section__paragraph{
+    text-align: justify;
+}
+
+.section__paragraph--notation{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    transform: rotate(-20deg);
+    color: #f00f00;
+}
+
+.steps-title{
+    text-align: center;
+}
+
+.steps__list{
+    margin: 0 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 30px 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.steps__list-item{
+    flex-grow: 1;
+    border: 1px solid black;
+    background: rgb(0, 32, 96);
+    color: #F6F8FA;
+    line-height: 30px;
+    position: inherit;
+    margin: 0;
+}
+
+.steps__list-item:hover{
+    background: rgba(0, 32, 96, 0.8);
+    cursor: pointer;
+}
+
+.steps__list-info{
+    color: #303440;
+    font-size: 16px;
+    text-align: justify;
+    transition: transform 1s;
+    padding: 5px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.steps__list-info--visible{
+    position: inherit;
+    visibility: visible;
+}
+
+.steps__info{
+    grid-column: 1 / 4;
+    display: block;
+    position: relative;
+}
+/* FINAL LISTA DE PASOS*/
+
+/* CONTENIDO PRINCIPAL */
+
+.main__general-title{
+    text-align: center;
+    color: #EAEBEF;
+}
+
+.main__title{
+    text-align: center;
+    padding: 30px 0;
+    color: #EAEBEF;
+    background: rgb(0, 32, 96);
+    z-index: 100;
+    padding: 20px;
+}
+
+.article{
+    position: relative;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.list__button--responsive{
+    line-height: 35px;
+    padding: 5px;
+}
+
+.list__button--responsive:hover{
+    cursor: pointer;
+    border-radius: 3px;
+    background: rgb(0, 32, 96);
+    color: #EAEBEF;
+}
+
+.section{
+    margin: 1em;
+}
+
+.section__paragraph--alert{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    font-size: 25px;
+}
+
+@media (min-width: 880px){
+    
+    .body--responsive{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+
+    .nav{
+        width: 300px;
+        grid-template-columns: 1 / 2;
+        transform: translateX(0px);
+    }
+    
+    .nav__button-menu{
+        visibility: hidden;
+    }
+
+    .nav__link{
+        color: #303440;
+        display: block;
+        padding: 3px 0;
+        text-decoration: none;
+    }
+    
+    .nav__link--inside{
+        border-radius: 6px ;
+        text-align: left;
+    }
+
+    .nav__link--inside:hover{
+        background: rgb(0, 32, 96);
+        padding-left: 15px;
+        color: #f0f0f0;
+    }
+    
+    .list{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 0 16px 16px 0;
+        background: #fff;
+    }
+    
+    .list--initial{
+        background-color: #EAEBEF;
+    }
+
+    .list__item{
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .list__item--click{
+        cursor: pointer;
+    }
+    
+    .list__button{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .arrow .list__arrow{
+        transform: rotate(90deg);
+    }
+    
+    .list__button--responsive{
+        margin: 0;
+        line-height: 24px;
+        width: 100%;
+        height: 50px;
+    }
+    
+    .list__show{
+        width: 90%;
+        margin-left: 30px;
+        border-left: 2px solid #303440;
+        list-style: none;
+        transition: height .4s;
+        height: 0;
+    }
+
+    .main{
+        grid-column: 2 / 3;
+    }
+
+    .main__social-link{
+        color: #303440;
+    }
+
+    .main__social-networks{
+        display: flex;
+        gap: 75px; 
+    }
+
+    .section__paragraph--alert{
+        left: 55%;
+        font-size: 50px;
+        transform: rotate(-45deg);
+        color: #243e4d;
+    }
+
+    .section__paragraph--notation{
+        font-size: 36px;
+        right: 100px;
+    }
+}
