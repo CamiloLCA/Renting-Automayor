@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
 body{
     background: #EAEBEF;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     min-width: 280px;
 }
 /* BARRA NAVEGACION */
@@ -52,7 +53,7 @@ body{
 }
 
 .list__button{
-    margin-left: 20px;
+    padding: 10px;
     position: relative;
 }
 
@@ -80,7 +81,7 @@ body{
 .list__show{
     width: 100%;
     margin-left: 0;
-    border-left: 2px solid #303440;
+    border-left: 2px solid rgb(0, 32, 156);
     list-style: none;
     transition: height .4s;
     height: 0;
@@ -132,7 +133,8 @@ body{
 
 .steps__list-item{
     flex-grow: 1;
-    border: 1px solid black;
+    border-left: 3px solid #0066ff;
+    border-bottom: 3px solid #0066ff;
     background: rgb(0, 32, 96);
     color: #F6F8FA;
     line-height: 30px;
@@ -150,14 +152,22 @@ body{
     font-size: 16px;
     text-align: justify;
     transition: transform 1s;
-    padding: 5px;
+    padding: 8px;
     position: absolute;
     visibility: hidden;
+}
+
+.steps__list-img{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .steps__list-info--visible{
     position: inherit;
     visibility: visible;
+    background-color: rgb(179 236 255);
 }
 
 .steps__info{
@@ -175,6 +185,7 @@ body{
 }
 
 .main__title{
+    margin-bottom: 35px;
     text-align: center;
     padding: 30px 0;
     color: #EAEBEF;
@@ -185,20 +196,24 @@ body{
 
 .article{
     position: relative;
-    margin: 10px 5px;
+    margin: 10px 40px;
     overflow: hidden;
 }
 
 .list__button--responsive{
     line-height: 35px;
     padding: 5px;
+    border-left: 3px solid #0066ff;
+    border-bottom: 3px solid #0066ff;
+    cursor: pointer;
+    background: #f0f0f0;
+    transition: background-color 1s ease,
+                color 0.7s 0.3s ease; 
 }
 
 .list__button--responsive:hover{
-    cursor: pointer;
-    border-radius: 3px;
-    background: rgb(0, 32, 96);
-    color: #EAEBEF;
+    background: #0066ff;
+    color: #f0f0f0;
 }
 
 .section{
@@ -239,6 +254,7 @@ body{
     .nav__link--inside{
         border-radius: 6px ;
         text-align: left;
+        transition: color 1s;
     }
 
     .nav__link--inside:hover{
@@ -288,13 +304,11 @@ body{
         margin: 0;
         line-height: 24px;
         width: 100%;
-        height: 50px;
     }
     
     .list__show{
         width: 90%;
         margin-left: 30px;
-        border-left: 2px solid #303440;
         list-style: none;
         transition: height .4s;
         height: 0;

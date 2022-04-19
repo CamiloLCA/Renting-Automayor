@@ -37,7 +37,6 @@ stepElementsButton.forEach(stepElementButton =>{
 
         secondStepElement.style.height = `${height}px`;
         showInfo.style.height = `${infoHeight}px`;
-        showInfo.style.background = `rgb(170 170 170)`;
     })
 })
 
@@ -49,18 +48,15 @@ thirdStepElementsButton.forEach(thirdStepElementButton =>{
         let thirdStepElement = document.querySelector('.list__show--second-menu');
         thirdStepElementButton.nextElementSibling.classList.toggle('steps__list-info--visible');
         
-        let height = 0;
         let infoHeight = 0;
         let showInfo = thirdStepElementButton.nextElementSibling;
         if(showInfo.clientHeight >= "0"){
             infoHeight = showInfo.scrollHeight;
         }
-        height = thirdStepElement.scrollHeight;
         thirdMenuHeight = thirdStepElement.scrollHeight;
 
         thirdStepElement.style.height = `${thirdMenuHeight}px`;
         showInfo.style.height = `${infoHeight}px`;
-        showInfo.style.background = `rgb(170 170 170)`;
     })
 })
 
