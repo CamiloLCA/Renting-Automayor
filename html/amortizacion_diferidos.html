@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renting Automayor</title>
+    <!--favicon pendiente-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/iva.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://kit.fontawesome.com/c1a2bdfd74.js" crossorigin="anonymous"></script>
+</head>
+<body class="body body--responsive">
+    <i class="fa-solid fa-bars fa-2xl nav__button-menu" id="button-menu--toggle"></i>
+    <nav class="nav" id="nav">
+        
+        <ul class="list" id="list">
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="../assets/dashboard.svg" class="list__img">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="../assets/message.svg" class="list__img">
+                    <a href="procedimiento.html" class="nav__link">Procedimiento</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="../assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Impuestos</a>
+                    <img src="../assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="iva.html" class="nav__link nav__link--inside">IVA</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="rte_fuente.html" class="nav__link nav__link--inside">RTE Fuente</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="ica_bogota.html" class="nav__link nav__link--inside">ICA Bogotá</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="rte_ica_bogota.html" class="nav__link nav__link--inside">RTE ICA Bogotá</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="autoretencion_bquilla.html" class="nav__link nav__link--inside">AUTORETENCION B/QUILLA</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list__item">
+                <div class="list__button">
+                    <i class="fa-solid fa-hand-holding-dollar list__img"></i>
+                    <a href="#" class="nav__link">Amortización</a>
+                </div>
+            </li>
+    </nav>
+    <main class="main">
+        <div class="main__title">
+            <h1 class="main__title-general">INSTRUCTIVO AMORTIZACION DIFERIDOS</h1>
+        </div>
+        <article class="article">
+            <p class="article__paragraph">El proceso de amortizacion consiste en reconocer los costos y gastos durante el tiempo de duracion de los inventarios,intagibles y diferidos el cual esta determinado por el plazo de los contratos de cada uno de los clientes de la compañía</p>
+        </article>
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">1. Descargar movimiento el de las compras realizadas en el mes anterior desde el programa contable ( Zeus)</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show list__show--first-menu">
+                <section class="section">
+                    <p class="section__paragraph">Generar y descargar movimiento en excel de las compras realizadas en el mes inmediatamente anterior por cada una de las cuentas de inventarios, intangibles y diferidos sin incluir el valor de la amortizacion registrado durante el periodo</p><br>
+                    <p class="section__paragraph">Paso a paso generacion movimiento en excel</p><br>
+                    <h4 class="steps-title">Pasos</h4>
+                <ul class="steps__list">
+                    <li class="steps__list-item">
+                        <!--EJ 1-->
+                        <div class="steps__list-button steps__list-button--second-step">1.1</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Consultas/consulta de movimientos</p><br>
+                            <img src="../assets/amortizacion/consulta_movimientos.png" alt="consultacion de movimientos en zeus" class="steps__list-img steps__list-img--size-first-img">
+                        </div>
+                    </li>
+                    <li class="steps__list-item">
+                        <!--EJ 2-->
+                        <div class="steps__list-button steps__list-button--second-step">1.2</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Se digita la informacion a consultar: fecha, marcacion und de negocio,cuentas y desmarcar opcion maximos registros(1024)</p>
+                            <img src="../assets/amortizacion/informacion.png" alt="informacion de movimientos en zeus" class="steps__list-img steps__list-img--size-second-img">
+                        </div>
+                    </li>
+                    <li class="steps__list-item">
+                        <div class="steps__list-button steps__list-button--second-step">1.3</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Se exporta el informe a excel</p><br>
+                            <img src="../assets/amortizacion/exportacion.png" alt="exportacion informe de movimientos" class="steps__list-img steps__list-img--size-third-img">
+                        </div>
+                    </li>
+                    <li class="steps__list-item">
+                        <div class="steps__list-button steps__list-button--second-step">1.4</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Guardar archivo excel en el ordenador</p><br>
+                            <img src="../assets/amortizacion/guardar_informacion.png" alt="exportacion informe de movimientos" class="steps__list-img steps__list-img--size-fourth-img">
+                        </div>
+                    </li>
+                </ul>                   
+                </section>
+            </div> 
+        </article>
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">2. Organizar informacion excel por tercero-cliente y und de negocio</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Una vez descargado el movimiento de la cuenta del periodo correspondiente se procede a la organización de la informacion que corresponde a las compras del mes, Informacion que se copia a la plantilla creacion de diferidos.</p><br>
+                    <p class="section__paragraph"><b>Nota: </b>No se debe incluir el movimiento de amortizacion del mes anterior por consiguiente esta informacion se elimina.</p><br>
+                    <p class="section__paragraph"> Ordenar informacion en la plantilla excel (creacion de diferidos) de la siguiente manera.</p><br>
+                    <ol class="steps steps--margin" type="A">
+                        <li class="steps__paragraph">Eliminar movimiento que corresponde a amortizacion del mes anterior</li>
+                        <li class="steps__paragraph">Organizar informacion por unidades de negocio</li>
+                        <li class="steps__paragraph">Organizar informacion por clientes (descripcion)</li>
+                        <li class="steps__paragraph">Organizar informacion por terceros a quien se le realizo la compra</li>
+                        <li class="steps__paragraph">Agrupar compras que corresponde al mismo,cliente,und de negocio y tercero (compra)</li>
+                        <li class="steps__paragraph"> Sumar el valor de las compras que se agruparon en la columna K</li>
+                        <li class="steps__paragraph">Validar el plazo del cliente, informacion que se obtiene del archivo base renting 2021 completa</li>
+                        <li class="steps__paragraph">Verificar sumatoria de las compras realizadas</li>
+                    </ol>
+                    <img src="../assets/amortizacion/organizacion_informacion.png" alt="organizacion de la informacion" class="steps__img">
+                </section>
+            </div>
+        </article>
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">3. Apertura y creacion de diferidos en Zeus </h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show list__show--second-menu">
+                <section class="section">
+                    <p class="section__paragraph">Apertura y creacion de diferidos en Zeus con el obejtivo de automatizar el proceso de amortizacion.</p><br>
+                    <img src="../assets/amortizacion/apertura_y_creacion.png" alt="apertura y creacion de diferidos en zeus">
+                    <p class="section__paragraph"><b>IMPORTANTE: </b>Para la apertura de cada diferido es importante  estar ubicado sobre la unidad de negocio correspondiente, informacion que se encuentra en la parte inferior del aplicativo.</p><br>
+                    <img src="../assets/amortizacion/informacion_apertura.png" alt="apertura del diferido"><br><br>
+                    <ul class="steps__list">
+                        <li class="steps__list-item">
+                            <!--EJ 1-->
+                            <div class="steps__list-button steps__list-button--third-step">3.1</div>
+                            <div class="steps__list-info">
+                                <h4 class="steps__list-title">Incluir informacion en definicion de diferido</h4><br>
+                                <p class="steps__list-paragraph">BU: Unidad de negocio columna J excel<br>Id.diferido: Nuevo, depues de que se guarde el diferido el sistema le asigna el consectivo<br>Descripcion: descripcion columna F excel<br>Ref.Dife: mes/año/consecutivo creacion (adicionar informacion archivo excel columna L)<br>Fecha de Inicio:ultimo dia del mes actual<br>DB:CR: CR</p><br>
+                                <p class="steps__list-paragraph"><b>FUENTE: </b>Se incluye de acuerdo a la unidad de negocio del diferido<br>CCP: DC<br>RT: DR</p><br>
+                                <p class="steps__list-paragraph"><b>PERIODO: </b>Plazo de contrato cliente columna N excel</p><br>
+                                <p class="steps__list-paragraph"><b>VALOR: </b>Valor total diferido columna k Excel</p><br>
+                                <img src="../assets/amortizacion/incluyimiento_informacion.png" alt="incluyimiento de la informacion">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <!--EJ 2-->
+                            <div class="steps__list-button steps__list-button--third-step">3.2</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Incluir informacion Partidas</h4><br>
+                                <p class="steps__list-paragraph"><b>CUENTA: </b>Corresponde a la cuenta de inventario de inventario, intangible o diferido</p>
+                                <p class="steps__list-paragraph"><b>TERCERO: </b>Corresponde al tercero a quien se le realizo la compra (columna H excel)<br>PORCENTAJE &nbsp;&nbsp;&nbsp;&nbsp;100%</p>
+                                <img src="../assets/amortizacion/partidas_incluyimiento_informacion.png" alt="incluyimiento de la informacion partidas">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--third-step">3.3</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Incluir informacion contrapartidas</h4><br>
+                                <p class="steps__list-paragraph"><b>CUENTA: </b>Corresponde a la cuenta de gasto costo que es copntrapartida de la cuenta del diferido que se esta creando</p>
+                                <p class="steps__list-paragraph"><b>TERCERO: </b>Corresponde al tercero a quien se le realizo la compra (columna H excel)<br>PORCENTAJE &nbsp;&nbsp;&nbsp;&nbsp;100%</p>
+                                <img src="../assets/amortizacion/contrapartidas_incluyimiento_informacion.png" alt="incluyimiento de la informacion contrapartida">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--third-step">3.4</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Verificar informacion ingresada y guardar el diferido creado</h4><br>
+                                <img src="../assets/amortizacion/verificacion_informacion.png" alt="verificacion de la informacion ingresada">
+                                <p class="steps__list-paragraph">Relacionar consectivo en archivo excel creacion de diferidos en la columna M</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">4. Revision de creacion de Diferidos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Una vez creado la totalidad de los dferidos del mes, se descarga la informacion correspondiente para validar y verificar que la apertura de los diferidos contenga la informacion de forma adecuada y pertinente con el fin de que se registre la informacion correctamente de forma automatica, mitigando inexactitudes que generen diferencias con el cuadro control excel de amortizacion de diferidos.</p><br>
+                    <p class="section__paragraph">la informacion a validar es la siguiente( comparativo  archivos: creacion diferidos y revision creacion diferidos)</p><br>
+                    <ol class="steps steps--margin" type="A">
+                        <li class="steps__paragraph">Cuenta de compra inventario, intangible o diferido</li>
+                        <li class="steps__paragraph">Cuenta gasto o costo (contrapartida compra)</li>
+                        <li class="steps__paragraph">Centro de costo: validar que todas las cuentas de gasto y costo contenga este dato para que el proceso de amortizacion se pueda correr</li>
+                        <li class="steps__paragraph">Porcentaje: 100%</li>
+                        <li class="steps__paragraph">Fuente: Validar que la fuente este acorde a la unidad de negocio</li>
+                        <li class="steps__paragraph">Valor: Corresponde a las compras realizas</li>
+                        <li class="steps__paragraph">Periodo: Corresponde al plazo de contrato de cada cliente </li>
+                    </ol><br>
+                    <img src="../assets/amortizacion/revision_creacion_diferidos.png" alt="revision de creacion de diferidos"><br><br>
+                    <p class="section__paragraph">Adicionalmente se deben anular aquellos diferidos que registraron una devolucion o nota credito y asi mismo reversar la amortizacion registrada en meses anteriores</p><br>
+                    <p class="section__paragraph"><b>NOTA: </b>Validar que la totalidad de  las compras del mes se encuentren con la apertura del diferido correspondiente para proceder con el proceso de amortizacion</p><br>
+                </section>
+            </div>
+        </article>
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">5. Proceso de amortizacion diferidos en Zeus</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show list__show--third-menu">
+                <section class="section">
+                    <p class="section__paragraph">Posteriomente a la creacion de todos los diferidos del mes se procede a correr el proceso de amortizacion.</p>
+                    <h4 class="section__title">Paso a paso proceso amortizacion</h4><br>
+                    <ul class="steps__list">
+                        <li class="steps__list-item">
+                            <!--EJ 1-->
+                            <div class="steps__list-button steps__list-button--fiveth-step">5.1</div>
+                            <div class="steps__list-info">
+                                <h4 class="steps__list-title">Transacciones/diferidos/ Generacion de Diferidos</h4><br>                       
+                                <img src="../assets/amortizacion/transaccion_generacion_diferidos.png" alt="transaccion y generacion de diferidos" class="steps-list-img steps-list-img--center">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <!--EJ 2-->
+                            <div class="steps__list-button steps__list-button--fiveth-step">5.2</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Diligenciar informacion: Marcacion unidades de neogcio, fecha generacion de diferidos y fecha de vencimiento contrapartida</h4><br>
+                                <img src="../assets/amortizacion/diligenciacion_informacion.png" alt="diligenciacion de informacion con fecha de la contrapartida" class="steps-list-img steps-list-img--center">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--fiveth-step">5.3</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Generacion: Seleccionar reloj de Arena</h4><br>
+                                <img src="../assets/amortizacion/generacion_diferidos.png" alt="Generacion de diferidos" class="steps-list-img steps-list-img--center">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--fiveth-step">5.4</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Movimiento Contable: grabar informacion</h4><br>
+                                <img src="../assets/amortizacion/grabacion_informacion.png" alt="Grabacion de informacion" class="steps-list-img steps-list-img--center">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--fiveth-step">5.5</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Realizar los mismos pasos anteriores desde el libro principal (5.1 a 5.4)</h4><br>
+                                <img src="../assets/amortizacion/realizacion_libro_principal.png" alt="Realizar los mismo pasos desde el libro principal" class="steps-list-img steps-list-img--center">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--fiveth-step">5.6</div>
+                            <div class="steps__list-info">
+                                <h4 class="step__list-title">Aplicar robot a comprabantes de amortizacion que se registraron desde el libro principal Zeus  para que esta informacion igualmente quede reflejada en el libro</h4><br>
+                                <div class="steps-list-substeps">
+                                    <p class="steps-list-substeps__paragraph">5.6.1 Consultar comprobante :Transacciones/Contabilidad/ Notas contables</p>
+                                    <img src="../assets/amortizacion/consultacion_comprobante.png" alt="consultacion de comprobante" class="steps-list-substeps__img steps-list-img--center">
+                                </div>
+                                <div class="steps-list-substeps">
+                                    <p class="steps-list-substeps__paragraph">5.6.2 Consultar cada uno de los comprobantes de amortizacion y seleccionar la opcion aplicar Robot</p>
+                                    <img src="../assets/amortizacion/consulta_comprobantes.png" alt="'Aplicar robot'" class="steps-list-substeps__img steps-list-img--center">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">6. Cuadro control excel - Amortizacion de Inventario y licencias por und de negocio</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show list__show--fourth-menu">
+                <section class="section">
+                    <p class="section__paragraph">El cuadro excel de amortizacion de inventario y liencias nos permite llevar un control de la informacion  y asi mismo validar que el proceso se este ejecutando a los lineamientos correspondientes corroborando las compras,las notas creditos o devoluciones, el valor amortizado por cada diferido, los saldos por cuenta y por unidad de negocio</p>
+                    <img src="" alt="" class="section__paragraph">
+                </section>
+                <ul class="steps__list">
+                    <li class="steps__list-item">
+                        <!--EJ 1-->
+                        <div class="steps__list-button steps__list-button--sixth-step">6.1</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Adicionar la informacion discriminada de cada uno de los diferidos creados que corresponden al mes inmediatamente anterior.</p><br>
+                            <img src="" alt="adicion de informacion al cuadro de control" class="steps__list-img">
+                            <img src="" alt="adicion de informacion al cuadro de control" class="steps__list-img">
+                        </div>
+                    </li>
+                    <li class="steps__list-item">
+                        <!--EJ 2-->
+                        <div class="steps__list-button steps__list-button--sixth-step">6.2</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Incluir el valor de las compras del mes actual por unidad de negocio (la discriminacion y creacion  de diferidos se realiza en el mes siguiente)</p>
+                            <img src="" alt="incluyimiento de la informacion partidas" class="steps__list-img">
+                        </div>
+                    </li>
+                    <li class="steps__list-item">
+                        <div class="steps__list-button steps__list-button--sixth-step">6.3</div>
+                        <div class="steps__list-info">
+                            <p class="steps__list-paragraph">Formular el valor de la amortizacion del mes actual de los diferidos que aun se han amortizado en un 100% sin incluir los diferidos que registran una devolucion </p>
+                            <img src="" alt="formulacion del valor de la amortizacion del mes" class="steps__list-img">
+                        </div>
+                    </li>
+                    <li class="steps__list-item">
+                        <div class="steps__list-button steps__list-button--sixth-step">6.4</div>
+                        <div class="steps__list-info">
+                            <p class="step__list-title">Validacion de Saldos de cuadro control de amortizacion excel vs informacion contable registrada</p>
+                            <section class="section">
+                                <p class="section__paragraph">6.4.1 <br> Descargar balance zeus general de todas las und de negocio del mes actual  en excel y adicionarlo en la hoja saldos balance Zeus</p>
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.1.1</a>&nbsp;
+                                    <p class="section__paragraph-process-description">Reportes/Contabilidad/libro anexos de balance</p>
+                                </div>
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.1.2</a>&nbsp;
+                                    <p class="section__paragraph-process-description">Digitar informacion, marcar und de neg, fechas, rango de cuentas, reporte profesional por reporte  y pagina</p>
+                                </div>
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.1.3</a>&nbsp;
+                                    <p class="section__paragraph-process-description">Visualizar informacion seleccionado el cirulo de la impresora</p>
+                                </div>
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.1.4</a>&nbsp;
+                                    <p class="section__paragraph-process-description">Seleccionar Save, excel 2007 file, ok y guardar en el escritorio  y descargar</p>
+                                </div>
+                            </section>
+                            <section class="section">
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.2</a>
+                                    <p class="section__paragraph-process-description">Copiar y pegar informacion balance excel descargado desde Zeus en la pestaña "saldos balance zeus" del cuadro de amortizacion de inventario y licencias en el </p>
+                                </div>
+                            </section>
+                            <section class="section">
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.3</a>
+                                    <p class="section__paragraph-process-description">Validar en la pestaña comparativo las diferencias que se tienen sean minimas (redondeo en amortizacion) y asi corroborar que la informacion cruza con contabilidad</p>
+                                </div>      
+                            </section>
+                            <section class="section">
+                                <div class="section__paragraph-process">
+                                    <a href="../assets/amortizacion/" class="section__paragraph-process-link">6.4.4</a>
+                                    <p class="section__paragraph-process-description">Posteriormente a la generacion de balances definitivos del mes actual de RT y CCP se pasa la informacion all archivo excel de amortizacion de inventarios y licencias en la pestaña "saldos balance excel" de la siguiente manera</p><br>
+                                    <p class="section__paragraph-process-description">Cuadro izquierda: Balance RT Incluye todas las unidades de negocio<br>Cuadro central : Balance CCP<br>Cuadro derecha: Formulado que corresponde a la unidad de negocio RT</p><br>
+                                </div>                   
+                            </section>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    
+    <script src="../javascript/main.js"></script>
+</body>
+</html>

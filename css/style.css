@@ -12,7 +12,7 @@ z-index:
 body{
     background: #EAEBEF;
     font-family: 'Merriweather Sans', sans-serif;
-    min-width: 320px;
+    min-width: 280px;
 }
 
 .nav{
@@ -29,8 +29,8 @@ body{
 }
 
 .main__img{
-    height: 250px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 .button-menu{
@@ -40,6 +40,7 @@ body{
 }
 
 .list{
+    max-width: 380px;
     width: 100%;
     min-width: 260px;
     height: 100vh;
@@ -117,6 +118,11 @@ body{
         grid-template-columns: 300px 1fr;
     }
 
+    .main__img{
+        height: 250px;
+        width: 300px;
+    }
+
     .nav{
         width: 300px;
         grid-template-columns: 1 / 2;
@@ -136,6 +142,8 @@ body{
     }
     
     .nav__link--inside{
+        width: 90%;
+        line-height: 40px;
         border-radius: 6px;
         text-align: left;
         transition: color 1s;

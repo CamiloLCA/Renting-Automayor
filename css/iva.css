@@ -7,6 +7,11 @@ body{
     min-width: 280px;
 }
 /* BARRA NAVEGACION */
+
+article img{
+    max-width: 400px;
+}
+
 .nav{
     position: fixed;
     width: 70%;
@@ -29,6 +34,7 @@ body{
 }
 
 .list{
+    max-width: 380px;
     width: 100%;
     min-width: 170px;
     height: 100%;
@@ -124,7 +130,6 @@ body{
 }
 
 .steps__list{
-    margin: 0 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 30px 30px;
     list-style: none;
@@ -158,16 +163,41 @@ body{
 }
 
 .steps__list-img{
-    height: 100px;
+    height: 150px;
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+.steps__list-img--size-first-img{
+    height: 100px;
+}
+
+.steps__list-img--size-second-img{
+    height: 260px;
+}
+
+.steps__list-img--size-third-img{
+    height: 75px;
+}
+
+.steps__list-img--size-fourth-img{
+    height: 350px;
+}
+
+.steps-list-img--center{
+    text-align: center;
+}
+
+.steps--margin{
+    margin-left: 25px;
+}
+
 .steps__list-info--visible{
     position: inherit;
     visibility: visible;
-    background-color: rgb(179 236 255);
+    background-color: #ffffff;
 }
 
 .steps__info{
@@ -175,6 +205,8 @@ body{
     display: block;
     position: relative;
 }
+
+
 /* FINAL LISTA DE PASOS*/
 
 /* CONTENIDO PRINCIPAL */
@@ -252,6 +284,8 @@ body{
     }
     
     .nav__link--inside{
+        width: 90%;
+        line-height: 40px;
         border-radius: 6px ;
         text-align: left;
         transition: color 1s;
@@ -325,6 +359,31 @@ body{
     .main__social-networks{
         display: flex;
         gap: 75px; 
+    }
+
+    .steps__img{
+        max-width: 500px;
+    }
+
+    .steps__list-img{
+        width: 85%;
+    }
+
+    .steps__list-img--size-first-img{
+        height: 120px;
+        min-width: 300px;
+    }
+    
+    .steps__list-img--size-second-img{
+        height: 300px;
+    }
+    
+    .steps__list-img--size-third-img{
+        height: 75px;
+    }
+    
+    .steps__list-img--size-fourth-img{
+        height: 350px;
     }
 
     .section__paragraph--alert{
