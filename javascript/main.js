@@ -29,7 +29,7 @@ stepElementsButton.forEach(stepElementButton =>{
 
         let secondStepElement = document.querySelector('.list__show--first-menu');
         stepElementButton.nextElementSibling.classList.toggle('steps__list-info--visible');
-        
+
         let height = 0;
         let infoHeight = 0;
         let showInfo = stepElementButton.nextElementSibling;
@@ -44,11 +44,14 @@ stepElementsButton.forEach(stepElementButton =>{
 })
 
 let thirdStepElementsButton = document.querySelectorAll('.steps__list-button--third-step');
+let thirdStepElementsOpenButton = document.querySelectorAll('.steps__list-button-section--open');
 
-thirdStepElementsButton.forEach(thirdStepElementButton =>{
-    thirdStepElementButton.addEventListener('click', ()=>{
+thirdStepElementsOpenButton.forEach(thirdStepElementOpenButton =>{
+    thirdStepElementOpenButton.addEventListener('click', abrirMenu);
 
+    function abrirMenu(){
         let thirdStepElement = document.querySelector('.list__show--second-menu');
+        let thirdStepElementButton = thirdStepElementOpenButton.parentElement;
         thirdStepElementButton.nextElementSibling.classList.toggle('steps__list-info--visible');
         
         let infoHeight = 0;
@@ -60,7 +63,19 @@ thirdStepElementsButton.forEach(thirdStepElementButton =>{
 
         thirdStepElement.style.height = `${thirdMenuHeight}px`;
         showInfo.style.height = `${infoHeight}px`;
-    })
+        thirdStepElementOpenButton.removeEventListener('click', abrirMenu);
+        let thirdStepElementCloseButton = thirdStepElementOpenButton.nextElementSibling;
+        thirdStepElementCloseButton.addEventListener('click', cerraMenu)
+
+        function cerraMenu(){
+            thirdStepElementButton.nextElementSibling.classList.remove('steps__list-info--visible');
+
+            thirdMenuHeight = thirdStepElement.scrollHeight - infoHeight;
+            thirdStepElement.style.height = `${thirdMenuHeight}px`;
+            thirdStepElementCloseButton.removeEventListener('click', cerraMenu);
+            thirdStepElementOpenButton.addEventListener('click', abrirMenu)
+        }
+    }
 })
 
 let fivethStepElementsButton = document.querySelectorAll('.steps__list-button--fiveth-step');

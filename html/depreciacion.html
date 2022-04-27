@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renting Automayor</title>
+    <!--favicon pendiente-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/iva.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://kit.fontawesome.com/c1a2bdfd74.js" crossorigin="anonymous"></script>
+</head>
+<body class="body body--responsive">
+
+    <i class="fa-solid fa-bars fa-2xl nav__button-menu" id="button-menu--toggle"></i>
+    <nav class="nav" id="nav">
+        
+        <ul class="list" id="list">
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="../assets/dashboard.svg" class="list__img">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="../assets/message.svg" class="list__img">
+                    <a href="procedimiento.html" class="nav__link">Procedimiento</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="../assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Impuestos</a>
+                    <img src="../assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">IVA</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="rte_fuente.html" class="nav__link nav__link--inside">RTE Fuente</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="ica_bogota.html" class="nav__link nav__link--inside">ICA Bogotá</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="rte_ica_bogota.html" class="nav__link nav__link--inside">RTE ICA Bogotá</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="autoretencion_bquilla.html" class="nav__link nav__link--inside">AUTORETENCION B/QUILLA</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list__item">
+                <div class="list__button">
+                    <i class="fa-solid fa-hand-holding-dollar list__img"></i>
+                    <a href="amortizacion_diferidos.html" class="nav__link">Amortización</a>
+                </div>
+            </li>
+    
+            <li class="list__item">
+                <div class="list__button">
+                    <i class="fa-solid fa-hand-holding-dollar list__img"></i>
+                    <a href="html/amortizacion_diferidos.html" class="nav__link">Depreciación</a>
+                </div>
+            </li>
+        </ul> 
+    </nav>
+    <main class="main">
+        <div class="main__title">
+            <h1 class="main__title-general">INSTRUCTIVO DEPRECIACION Y CONTROL ACTIVIDADES</h1>
+        </div>
+        <section class="section">
+            <p class="section__paragraph">El proceso de depreciacion consiste en reconocer el desgaste y perdida que sufren los activos de la compañia por su uso</p>
+        </section>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">1. Descargar movimiento de Activaciones y retiros en el mes  desde el programa contable ( Zeus) y validacion con reporte entregas y venta de vehiculos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show list__show--first-menu">
+                <section class="section"> 
+                    <p class="section__paragraph">Generar y descargar movimiento en excel de las activaciones y retiros de vehiculos registradas en el mes por cada una de las cuentas de Activacion (15400501 vehiculos propios, 15400502 vehiculos restituidos y 15400801 vehiculos colocados), posteriormente validar con informe de entregas del mes (informacion suministrada por el area de operaciones)  e informacion de vehiculos vendidos</p><br> 
+                    <p class="section__paragraph">Paso a paso generacion movimiento en excel</p><br>
+                    <ul class="steps__list">
+                        <li class="steps__list-item">
+                            <!--EJ 1-->
+                            <div class="steps__list-button steps__list-button--second-step">1.1</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Consultas/consulta de movimientos</p><br>
+                                <img src="../assets/depreciacion/consulta_de_movimientos.png" alt="consulta de movimientos">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <!--EJ 2-->
+                            <div class="steps__list-button steps__list-button--second-step">1.2</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Se digita la informacion a consultar: fecha, marcacion und de negocio,cuentas y desmarcar opcion maximos registros(1024)</p>
+                                <img src="../assets/depreciacion/informacion_movimientos.png" alt="digitacion de informacion en los movimientos">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--second-step">1.3</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Se exporta el informe a excel.</p><br>
+                                <img src="../assets/depreciacion/exportacion_informe.png" alt="digitacion de informacion en los movimientos">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--second-step">1.4</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Guardar archivo excel en el ordenador</p><br>
+                                <img src="../assets/depreciacion/guardar_archivo_uno.png" alt="digitacion de informacion en los movimientos">
+                                <img src="../assets/depreciacion/guardar_archivo_dos.png" alt="digitacion de informacion en los movimientos">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--second-step">1.5</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Validacion de registros de vehiculos activados en el mes correspondan a los informacion sumnistrada por el area de operaciones</p><br>
+                                <p class="steps__list-paragraph">La informacion  a validar es la siguiente</p><br>
+                                <ol class="steps__list-ordered">
+                                    <li class="steps__item-ordered">Placa de vehiculo</li>
+                                    <li class="steps__item-ordered">Cliente</li>
+                                    <li class="steps__item-ordered">Valor de activacion de vehiculos, carrocerias u otros accesorios</li>
+                                    <li class="steps__item-ordered">Proveedor compra activo</li>
+                                    <li class="steps__item-ordered">Unidad de negocio</li>
+                                </ol>
+                                <p class="steps__list-paragraph">Nota: Si se activaron vehiculos, carrocerias u otros accesorios verificar si corresponden a vehiculos entregados en meses anteriores y tener una justificacion que sustente la incorporacion de la misma.</p><br>
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <div class="steps__list-button steps__list-button--second-step">1.6</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Validacion de registros de vehiculos retirados en el mes correspodan y cruce con el movimiento de la cuenta 15400899 venta de activos fijos-vehiculos</p><br>
+                                <p class="steps__list-paragraph">la informacion  a validar es la siguiente</p><br>
+                                <ol class="steps__list-ordered">
+                                    <li class="steps__item-ordered">El valor de baja del activo sea igual al valor por el que se activo</li>
+                                    <li class="steps__item-ordered">Unidad de negocio corresponda a la activacion inicial o su ultima reclasificacion si por alguna eventualidad se llego a  presentar</li>
+                                    <li class="steps__item-ordered">Si el vehiculo fue retirado se registre de acuerdo a su ultimo estado (propio,restituido o colacado) </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <div class="steps__info" id="steps__info"></div>
+                    </ul>                                 
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">2. Relacionar informacion de activaciones y retiros en cuadro de depreciacion</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Posteriormente a validacion de informacion registrada de forma adecuada y apropiada de las activaciones y retiros  se procede a se relacionada en el cuadro excel  de depreciacion contable-vehiculos</p><br>      
+                    <p class="section__paragraph">La informacion a relacionar es la siguiente</p><br>
+                    <h2 class="section__subtitle">VEHICULOS ACTIVADOS</h2>
+                    <ol class="section__list">
+                        <li class="section__list-item">Nit - cliente</li>
+                        <li class="section__list-item">Placa</li>
+                        <li class="section__list-item">Descripcion</li>
+                        <li class="section__list-item">Fecha de compra (activacion)</li>
+                        <li class="section__list-item">Unidad de negocio</li>
+                        <li class="section__list-item">Estado de vehiculo</li>
+                        <li class="section__list-item">Valor residual</li>
+                        <li class="section__list-item">Veces a depreciar</li>
+                        <li class="section__list-item">Plazo contrato</li>
+                    </ol><br>
+                    <p class="section__paragraph">(archivo informe relacion activos entregados)</p>
+                    <img src="../assets/depreciacion/informacion_vehiculos_activos.png" alt="informacion de los vehiculos activos" class="section__img"><br>
+                    <h2 class="section__subtitle">VEHICULOS RETIRADOS</h2><br>
+                    <ol class="section__list">
+                        <li class="section__list-item">Incluir fecha de retiro</li>
+                        <li class="section__list-item">Modificar estado del vehiculo retirado</li>
+                        <li class="section__list-item">Ingresar el valor de retiro en la casilla correspondiente</li>
+                    </ol><br>
+                    <p class="section__paragraph">(archivo movimiento cuenta 15400899 venta de activos fijos-vehiculos)</p>
+                    <img src="../assets/depreciacion/informacion_vehiculos_retirados.png" alt="informacion de los vehiculos retirados" class="section__img"><br>
+                    <p class="section__paragraph"><b>Nota:</b> Si el estado de un vehiculo cambio este debe verse reflejado tanto en contabilidad como en el cuadro de depreciacion</p>
+                    <p class="section__paragraph">imágenes archivo depreciacion contable vehiculos</p>
+                    <img src="../assets/depreciacion/depreciacion_contable_vehiculos.png" alt="depreciacion contable de los vehiculos" class="section__img">
+                    <img src="../assets/depreciacion/depreciacion_contable_vehiculos_dos.png" alt="depreciacion contable de los vehiculos" class="section__img">
+                    
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">3. Validacion reversion de depreciacion de vehiculos vendidos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">La depreciacion de los vehiculos que fueron vendidos y se encontraban activados debe ser reversada por el valor acumulado por ende se procede a validar que el registro del mismo seael correspondiente  y asi mismo corroborar que el valor acumulado y el saldo en libros sea de $0</p><br>       
+                    <img src="../assets/depreciacion/validacion_deprecacion_vehiculos.png" alt="" class="section__paragraph">
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">4. Calculo depreciacion  Vehiculos del mes</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">En el archivo de depreciacion contable de vehiculos en la columna depreciacion (mes actual) calcular el valor de la depreciacion de los vehiculos que se encuentran activados sin incluir los que se activaron en el mes actual</p><br>
+                    <p class="section__paragraph">Observaciones: Los vehiculos que ya fueron retirados no se les debe calcular la depreciacion, el valor depreciado amulado debe ser igual $0</p><br>
+                    <img src="../assets/depreciacion/calculo_depreciacion_vehiculos.png" alt="" class="section__img">           
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">5. Calculo depreciacion otros activos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Abrir el archivo excel 55. Calculo depreciacion otros activos e ingresar los activos nuevos que se compraron en el mes y asi mismo calcular la depreciacion de los otros activos sin incluir los que se activaron en el mes actual o ya fueron depreciados a un 100%</p><br>      
+                    <img src="../assets/depreciacion/calculo_depreciacion.png" alt="" class="section__img">
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">6. Contabilizacion depreciacion por archivo plano</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Elaborar  archivo plano en excel "Mov a incorporar Zeus Depre" con el calculo de la depreciacion de los dos archivos ( depreciacion contable de vehiculo y 55.calculo</p><br>
+                    <img src="../assets/depreciacion/contabilizacion_depreciacion_uno.png" alt="contabilizacion depreciacion en excel" class="section__img">
+                    <img src="../assets/depreciacion/contabilizacion_depreciacion_dos.png" alt="contabilizacion depreciacion en excel" class="section__img">
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">7. Validacion valor en libros de vehiculos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Posteriormente al registro y cargue de archivo plano de depreciacion del mes se procede a validar el valor en libros teniendo en cuenta los siguientes puntos</p>                   
+                    <ol class="section__list">
+                        <li class="section__item">Ningun valor en libros  de un vehiculo puede ser negativo </li>
+                        <li class="section__item">Los vehiculos con estado retirado su valor en libros debe ser igual a 0</li>
+                        <li class="section__item">La sumatoria del valor en libros de todos los vehiculos debe ser equivalente al valor de las activaciones ( cuentas 15400501,15400502 y 15400801) menos el valor de la depreciacion acumulada( cuentas 15923501 y 15923502)</li>
+                        <li class="section__item">El valor en libros no debe ser inferior al nuevo valor residual</li>
+                    </ol><br>
+                    <img src="../assets/depreciacion/validacion_en_libros_vehiculos.png" alt="validacion valor en libros de vehiculos" class="section__img">
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">8. Validacion  valor mensual  y numero de veces depreciado </h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Verificar y corroborar que el valor depreciado en el mes sea el mismo al valor de depreciacion mensual de todos los meses, si es diferente identificar si corresponde a algun ajuste</p><br>             
+                    <img src="../assets/depreciacion/depreciacion_mensual.png" alt="depreciacion mensual" class="section__img">
+                    <img src="../assets/depreciacion/depreciacion_mensual_calculada.png" alt="depreciacion mensual" class="section__img">
+                    <p class="section__paragraph">Validacion el numero de veces sea un numero entero y que este no sea superior  al valor de la columna "veces a depreciar nuevo"</p><br>           
+                    <img src="../assets/depreciacion/validacion_depreciacion.png" alt="validacion depreciacion total" class="section__img">
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">9. Validacion saldos por cuenta y unidad de negocio - Vehiculos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Previamente a la inclusion y relacion  de la informacion de los vehiculos activados y depreciacion en el cuadro excel "depreciacion contable de vehiculos"  se verifica los saldo de la informacion por cada una de las cuentas contables de activaciones y depreciacion; asi mismo de corrobora los saldos por unidad de negocio con la finalidad de que la informacion cruce.</p>  
+                    <p class="section__paragraph"><b>9.1</b> Relacionar la informacion de saldos desde Zeus o balance excel definitivo</p>
+                    <p class="section__paragraph"><b>9.2</b> Relacionar la segregacion de saldos por unidad de negocio  los cuales se toman de los balance definitivos de RT y CCP</p><br>
+                    <img src="../assets/depreciacion/saldos_de_balance.png" alt="saldo de balance" class="section__img">
+                    <img src="../assets/depreciacion/balances_definitivos.png" alt="balances definitivos" class="section__img">
+                </section>
+            </div> 
+        </article>
+
+        <article class="article">
+            <div class="list__button list__button--click list__button--responsive">
+                <h3 class="article__subtitle nav__link--article">10. Validacion saldos activacion y depreciacion- otros activos</h3>
+                <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
+            </div>
+            <div class="list__show">
+                <section class="section">
+                    <p class="section__paragraph">Relacionar en el cuadro excel "55.Calculo depreciacion otros activos" los saldos de las cuentas (15160501,15280501, 15240501, 15920501 , 15921501 y 15922001) con el fin de tener el contro de cada uno de estos activos</p><br>         
+                    <img class="section__img" src="../assets/depreciacion/validacion_saldos_depreciacion.png" alt="validacion de saldos activacion y depreciacion">
+                </section>
+            </div> 
+        </article>
+    </main>
+    <script src="../javascript/main.js"></script>
+</body>
+</html>

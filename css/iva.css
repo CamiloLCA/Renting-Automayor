@@ -8,6 +8,10 @@ body{
 }
 /* BARRA NAVEGACION */
 
+ol{
+    margin-left: 20px;
+}
+
 article img{
     max-width: 400px;
 }
@@ -168,6 +172,24 @@ article img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.steps__list-button--third-step{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.steps__list-button-section--open{
+    flex-grow: 7;
+}
+
+.steps__list-button-section--close{
+    flex-grow: 1;
+    background-color: #0042a5;
+}
+
+.steps__list-button-section--close:hover{
+    background-color: #0066ff;
 }
 
 .steps__list-img--size-first-img{
