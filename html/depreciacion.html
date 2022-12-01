@@ -59,6 +59,14 @@
                     <li class="list__inside">
                         <a href="autoretencion_bquilla.html" class="nav__link nav__link--inside">AUTORETENCION B/QUILLA</a>
                     </li>
+
+                    <li class="list__inside">
+                        <a href="ica-bucaramanga.html" class="nav__link nav__link--inside">ICA BUCARAMANGA</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="autoretencion-giron.html" class="nav__link nav__link--inside">AUTORRETENCION GIRON</a>
+                    </li>
                 </ul>
             </li>
             <li class="list__item">
@@ -71,7 +79,7 @@
             <li class="list__item">
                 <div class="list__button">
                     <i class="fa-solid fa-hand-holding-dollar list__img"></i>
-                    <a href="html/amortizacion_diferidos.html" class="nav__link">Depreciación</a>
+                    <a href="#" class="nav__link">Depreciación</a>
                 </div>
             </li>
         </ul> 
@@ -91,7 +99,7 @@
             </div>
             <div class="list__show list__show--first-menu">
                 <section class="section"> 
-                    <p class="section__paragraph">Generar y descargar movimiento en excel de las activaciones y retiros de vehiculos registradas en el mes por cada una de las cuentas de Activacion (15400501 vehiculos propios, 15400502 vehiculos restituidos y 15400801 vehiculos colocados), posteriormente validar con informe de entregas del mes (informacion suministrada por el area de operaciones)  e informacion de vehiculos vendidos</p><br> 
+                    <p class="section__paragraph">Generar y descargar en excel movimiento  de las activaciones y retiros de vehiculos registradas en el mes  por cada una de las cuentas de Activacion (15400501 vehiculos propios, 15400502 vehiculos restituidos y 15400801 vehiculos colocados), posteriormente validar con informe de entregas del mes (informacion suministrada por el area de operaciones)  e informacion de vehiculos vendidos o retirados.</p><br> 
                     <p class="section__paragraph">Paso a paso generacion movimiento en excel</p><br>
                     <ul class="steps__list">
                         <li class="steps__list-item">
@@ -278,7 +286,7 @@
             </div>
             <div class="list__show">
                 <section class="section">
-                    <p class="section__paragraph">Verificar y corroborar que el valor depreciado en el mes sea el mismo al valor de depreciacion mensual de todos los meses, si es diferente identificar si corresponde a algun ajuste</p><br>             
+                    <p class="section__paragraph">Verificar y corroborar que el valor depreciado en el mes sea el mismo al valor de depreciacion mensual de todos los meses, si es diferente identificar si corresponde a un ajuste, a un retiro del vehiculo o el valor depreciacion acumulada del vehiculo ya coincide con el saldo del valor depreciable.</p><br>             
                     <img src="../assets/depreciacion/depreciacion_mensual.png" alt="depreciacion mensual" class="section__img">
                     <img src="../assets/depreciacion/depreciacion_mensual_calculada.png" alt="depreciacion mensual" class="section__img">
                     <p class="section__paragraph">Validacion el numero de veces sea un numero entero y que este no sea superior  al valor de la columna "veces a depreciar nuevo"</p><br>           
@@ -292,13 +300,29 @@
                 <h3 class="article__subtitle nav__link--article">9. Validacion saldos por cuenta y unidad de negocio - Vehiculos</h3>
                 <img src="../assets/arrow.svg" class="list__arrow list__arrow--articles">
             </div>
-            <div class="list__show">
-                <section class="section">
-                    <p class="section__paragraph">Previamente a la inclusion y relacion  de la informacion de los vehiculos activados y depreciacion en el cuadro excel "depreciacion contable de vehiculos"  se verifica los saldo de la informacion por cada una de las cuentas contables de activaciones y depreciacion; asi mismo de corrobora los saldos por unidad de negocio con la finalidad de que la informacion cruce.</p>  
-                    <p class="section__paragraph"><b>9.1</b> Relacionar la informacion de saldos desde Zeus o balance excel definitivo</p>
-                    <p class="section__paragraph"><b>9.2</b> Relacionar la segregacion de saldos por unidad de negocio  los cuales se toman de los balance definitivos de RT y CCP</p><br>
-                    <img src="../assets/depreciacion/saldos_de_balance.png" alt="saldo de balance" class="section__img">
-                    <img src="../assets/depreciacion/balances_definitivos.png" alt="balances definitivos" class="section__img">
+            <div class="list__show test__list-show">
+                <section class="section test__list">
+                    <p class="section__paragraph">Previamente a la inclusion y relacion  de la informacion de los vehiculos activados y depreciacion en el cuadro excel "depreciacion contable de vehiculos"  se verifica los saldo de la informacion por cada una de las cuentas contables de activaciones y depreciacion; asi mismo de corrobora los saldos por unidad de negocio con la finalidad de que la informacion cruce.</p><br>
+                    <ul class="steps__list">
+                        <li class="steps__list-item">
+                            <!--EJ 1-->
+                            <div class="steps__list-button test__list">9.1</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Relacionar en la pestaña Balance excel la segregacion de saldos por unidad de negocio  los cuales se toman de los balance definitivos de Balance Global y Balance CCP</p><br>
+                                <img src="../assets/depreciacion/balances_excel(global).png" alt="balances_excel">
+                                <img src="../assets/depreciacion/balances_excel(CPP).png" alt="balances excel CPP">
+                                <img src="../assets/depreciacion/balances_excel(RT).png" alt="balance excel RT">
+                            </div>
+                        </li>
+                        <li class="steps__list-item">
+                            <!--EJ 2-->
+                            <div class="steps__list-button test__list">9.2</div>
+                            <div class="steps__list-info">
+                                <p class="steps__list-paragraph">Relacionar la segregacion de saldos por unidad de negocio  los cuales se toman de los balance definitivos de RT y CCP</p><br>
+                                <img src="../assets/depreciacion/pestaña_control.png" alt="pestaña de control">
+                            </div>
+                        </li>
+                    </ul>
                 </section>
             </div> 
         </article>

@@ -119,3 +119,24 @@ sixthStepElementsButton.forEach(sixthStepElementButton =>{
         showInfo.style.height = `${infoHeight}px`;
     })
 })
+
+let test = document.querySelectorAll('.test__list');
+
+test.forEach(test =>{
+    test.addEventListener('click', ()=>{
+
+        let testMenu = document.querySelector('.test__list-show');
+        test.nextElementSibling.classList.toggle('steps__list-info--visible');
+
+        let infoHeight = 0;
+        let showInfo = test.nextElementSibling;
+        if(showInfo.clientHeight >= "0"){
+            infoHeight = showInfo.scrollHeight;
+        }
+
+        testMenuHeight = testMenu.scrollHeight;
+        
+        testMenu.style.height = `${testMenuHeight}px`;
+        showInfo.style.height = `${infoHeight}px`;
+    })
+})
