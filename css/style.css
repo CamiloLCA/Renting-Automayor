@@ -124,7 +124,7 @@ body{
     }
 
     .nav{
-        width: 300px;
+        width: 320px;
         grid-template-columns: 1 / 2;
         transform: translateX(0px);
         background: linear-gradient(to top, rgb(0, 32, 96) 0%, #f1f2ff 100%);
@@ -142,7 +142,6 @@ body{
     }
     
     .nav__link--inside{
-        width: 90%;
         line-height: 40px;
         border-radius: 6px;
         text-align: left;
@@ -152,7 +151,7 @@ body{
     .nav__link--inside:hover{
         background-color: rgb(0, 32, 96);
         color: #f0f0f0;
-        padding-left: 15px;
+        padding-left: 10px;
     }
     
     .list{
